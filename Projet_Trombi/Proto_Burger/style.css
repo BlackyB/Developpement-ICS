@@ -1,0 +1,472 @@
+
+
+/*************************MAIN***********************/
+body{
+	/*	font-size: 100%;
+		background-image: url(img/background.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: white;
+		position: fixed;
+		min-width: 100%;*/
+	}
+	#wrapper{
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	/*********RESPONSIVE_HEADER******/
+
+	#monHeader{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 15%;
+		margin: 0;
+		background-color: rgb(58,11,62);
+		box-shadow: 0em 0em 2vmax 0.05vmax black;
+	}
+	h1, h3, p{
+		font-family: "Gill Sans", sans-serif;
+		color: white;
+		text-align:center;
+	}
+	.name{
+		font-weight: bold;
+	}
+	.container{
+		display: flex;
+		height: 100%;
+		flex-direction: row;
+		align-content: space-around;
+	}
+
+	[class*="col-"] {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+		width: 33%;
+		height: inherit;
+	}
+	#embedded_logo{
+		right: 0;
+		width: 100%;
+		height:inherit;
+	}
+
+	/************BURGER***********/
+
+	/***********DIV_DU_CONTOUR_DU_HAMB_ZONEDECLICK*******/
+
+	.blabla {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-top: 0%;
+		height: 100%;
+		width: 35%;
+		cursor: pointer;
+		background-color: transparent;
+	}
+
+	/********MENU_CACHE**********************/
+	.menu{
+		position: absolute;
+		background-color:rgb(207,215,222) ;
+		top: 0;
+		left: -5%;
+		opacity: 0;
+		width: 0;
+		height:0;
+		border: 0.1em solid rgb(58,11,62);
+		box-shadow: 0em 0em 2vmax 0.1vmax black;
+		transition: 0.6s;
+	}
+	/**********MENU_FINAL_DEPLIE****************/
+
+	.menuChangeOff{
+		position:fixed;
+		display: flex;
+		flex-direction: column;
+		opacity:1;
+		align-content: space-around;
+		width: 25%;
+		padding-top: 10%;
+		background-color:rgb(207,215,222) ;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 50px;
+		background-color: rgb(84,44,81);
+		border: 0.15em solid rgb(58,11,62);
+		box-shadow: 8px 8px 4px grey;
+		transition: 0.6s;
+	}
+	.button_menu{
+		background-color: rgb(58,11,62);
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 2%;
+		border-radius: 25px;
+		box-shadow: 0em 0em 1vmax 0.05vmax black;
+		cursor: pointer;
+	}
+	.button_menu a:link
+	{
+		text-decoration:none;
+	} 
+
+	/**************_3BARS_DU_HAMB*****************/
+
+	.bar1, .bar2, .bar3 {
+		position: relative;
+		box-sizing: border-box;
+		width: 50%;
+		height: 10%;
+		margin-bottom: 10%;
+		background-color: rgb(153, 71, 144);
+		left:25%;
+		transition: 0.4s;
+		top: 20%;
+	}
+
+	/******ANIM_DES_BARS*********/
+
+	.bar1c {
+		position: relative;
+		box-sizing: border-box;
+		width: 50%;
+		height: 10%;
+		margin-bottom: 10%;
+		background-color: rgb(153, 71, 144);
+		left:25%;
+		transition: 0.4s;
+		top: 20%;
+		-webkit-transform: translateY(240%);
+		transform: translateY(240%);
+	}
+	.bar2c {
+		position: relative;
+		box-sizing: border-box;
+		width: 50%;
+		height: 10%;
+		margin-bottom: 10%;
+		background-color: rgb(153, 71, 144);
+		left:25%;
+		transition: 0.4s;
+		top: 20%;
+		opacity: 0;
+	}
+	.bar3c {
+		position: relative;
+		box-sizing: border-box;
+		width: 50%;
+		height: 10%;
+		margin-bottom: 10%;
+		background-color: rgb(153, 71, 144);
+		left:25%;
+		transition: 0.4s;
+		top: 20%;
+		-webkit-transform: translateY(-240%);
+		transform: translateY(-240%);
+	}
+
+/**************************SLIDER*********/
+
+#slider_central{
+	margin-top: 15vmax;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.mySlides{
+	display:none;
+	height: 50vh;
+	box-shadow: 0em 0em 2vmax 0.5vmax black;
+	width:auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+	/*************GALLERY**********/
+
+	#rounded_container{
+		position: relative;
+		background-color:rgb(153, 71, 144);
+		width: 80%;
+		margin-bottom: 5%;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius:3vmax;
+		box-shadow: 0em 0em 2vmax 0.1vmax black;
+		border: 0.5vw solid rgb(58,11,62);
+	}
+	#volet h3 {
+		font-size: 1.4em;
+		text-align: center;
+		color: white;
+	}
+	.row_mosa:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.row_mosa{
+		display: flex;
+		height: inherit;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	[class*="col-m"] {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		width: 33%;
+		height: inherit;
+	}
+	.portrait {
+		display: flex;
+		cursor: pointer;
+		width: 40%;
+		margin-right:30%;
+		margin-left: 30%;
+		margin-top: 10%;
+		margin-bottom: 0;
+		border-radius: 50%;
+		box-shadow: 0em 0em 2vmax 0.1vmax black;
+		opacity: 0.8;
+		filter: grayscale(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+
+	.portraitclick{
+
+		display: flex;
+		width: 40%;
+		margin-right:30%;
+		margin-left: 30%;
+		margin-top: 10%;
+		margin-bottom: 0;
+		border-radius: 50%;
+		box-shadow: 0em 0em 2vmax 0.1vmax black;
+		opacity: 0;
+		filter: grayscale(100%);
+		transition: transform 0.5s ease-in;
+		transform: scale(1.4);
+		border: 0.3vw solid rgb(58,11,62);
+		opacity: 1;
+		filter: none;
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+	/*.portrait:hover{
+		transform: scale(1.4);
+		border: 0.3vw solid rgb(58,11,62);
+		opacity: 1;
+		filter: none;/*
+	}
+
+	/**************SHUTTER******************/
+
+	#selecteur{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		box-sizing: border-box;
+		padding: 0;
+		left: 0;
+		top:0;
+		height:10%;
+		width: auto;
+	}
+	#button {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		top: 10%;
+		min-height: 10px;
+		height:80%;
+		width: 10vw;
+		border-radius:3vmax;
+		border: 0.1em solid black;
+		cursor: pointer;
+	}
+	#arrow {
+		position: relative;
+		min-height: 20px;
+		top: 12.5%;
+		height:75%;
+		width: 60%;
+		transform: scale(1.5);
+		margin-right: auto;
+		margin-left: auto;
+		-webkit-transition:  transform 1s ease-in;
+		transition:  transform 1s ease-in;
+	}
+	#toogle{display: none;}
+	label[for=toogle]{
+		position: relative;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+	#volet{
+		position: fixed;
+		top: 90%;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		margin:0;
+		background-color: rgb(58,11,62);
+		-webkit-transition:  top 1s ease-in, background-color 0.5s ease-in;
+		transition:  top 1s ease-in, background-color 0.5s ease-in;
+		box-shadow: 0em 0em 2vmax 0.05vmax black;
+	}
+	#button:hover{
+		background-color: rgb(84,44,81);
+	}	
+	#toogle:checked ~ #volet{ 
+		overflow: scroll;
+		top: 0%;
+		background-color: rgb(84,44,81);
+	}
+	#toogle:checked ~ #volet #arrow{
+		transform:scaleY(-1);
+	}
+	#toogle:checked ~ #volet #button{
+		background-color: rgb(153, 71, 144);
+		border: none;
+	}
+	#toogle:checked ~ #volet #selecteur{
+		background-color: rgb(153, 71, 144);
+	}
+
+	/*********************MEDIA_QUERIES***************/
+
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		body {
+			font-size: 0.5rem;
+		}
+		#monHeader {
+			min-height: 22.22px;
+			max-height: 44.44px;
+		}
+		.menuChangeOff{
+			height: 25%;
+		}
+		footer {
+			min-height: 14.8px;
+			max-height: 29.6px;
+		}
+	}
+
+	@media (min-width: 480px) and (max-width: 720px) {
+		body {
+			font-size: 0.75rem;
+		}
+		#monHeader {
+			min-height: 33.33px;
+			max-height: 66.66px;
+		}
+		.menuChangeOff{
+			height: 40%;
+		}
+		footer {
+			min-height: 22.22px;
+			max-height: 44.44px;
+		}
+	}
+	@media (min-width: 720px) and (max-width: 1280px) {
+		body {
+			font-size: 0.9rem;
+		}
+		#monHeader {
+			min-height: 50px;
+			max-height: 100px;
+		}
+		.menuChangeOff{
+			height: 40%;
+			width: 15%;
+		}
+		footer {
+			min-height: 33.33px;
+			max-height: 66.66px;
+		}
+	}
+	@media (min-width: 1280px) and (max-width: 1440px) {
+		body {
+			font-size: 1.25rem;
+		}
+		#monHeader {
+			min-height: 75px;
+			max-height: 150px;
+		}
+		.menuChangeOff{
+			height: 50%;
+			width: 15%;
+		}
+		footer {
+			min-height: 50px;
+			max-height: 100px;
+		}
+	}
+	@media (min-width: 1440px) and (max-width: 1920px) {
+		body {
+			font-size: 1.50rem;
+		}
+		#monHeader {
+			min-height: 100px;
+			max-height: 200px;
+		}
+		.menuChangeOff{
+			height: 50%;
+			width: 15%;
+		}
+		footer {
+			min-height: 75px;
+			max-height: 150px;
+		}
+	}
+	@media (min-width: 1921px) {
+		body {
+			font-size: 1.75rem;
+		}
+		#monHeader {
+			min-height: 150px;
+			max-height: 300px;
+		}
+		.menuChangeOff{
+			height: 50%;
+			width: 15%;
+		}
+		footer {
+			min-height: 100px;
+			max-height: 200px;
+		}
+	}

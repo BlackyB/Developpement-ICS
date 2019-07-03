@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 12px;
+}
+.bg-color {
+	background-color: #2E9CE6;
+}
+.top{
+	background-color: #2885C4;
+}
+.bg-form{
+	background-color: #57B3F1;
+}
+header{
+	padding: 25px;
+}
+h1 {
+	font-family: "Tahoma";
+	text-align: center;
+	color: #FFF;
+}
+label, p {
+	font-family: "Tahoma";
+	color: #003A61;
+}
+.wrapper {
+	padding: 10px;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; ;
+	margin: 25px;
+	height: 25px;	
+}
+.center {
+	justify-content: center;
+	align-items: center;
+}
+.margin-40{
+	margin: 40px;
+}
+.padding-30{
+	padding: 30px 10px;
+}
+.b-radius-15{
+	border-radius: 15px;
+}
+#envoiForm input{
+	background-color: #2885C4;
+	border: 2px solid #003A61;
+	color: #FFF;
+	text-align: center;
+	margin: 10px;
+	width: 100px;
+	height: 40px;
+}
+.red {
+	color: red;
+}
+.pointer {
+	cursor: pointer;
+}
+#carre {
+	
+}
+input{
+	padding: 10px;
+}
+
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 1280px){
+	.bg-form {
+		width: 50%;
+		margin: 0 auto;
+	}
+	input[type=text], input[type=tel], input[type=email] {
+		width: 75%;
+	}
+}

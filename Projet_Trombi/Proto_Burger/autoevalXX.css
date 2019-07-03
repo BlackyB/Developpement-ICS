@@ -1,0 +1,361 @@
+/*
+/*************************MAIN***********************/
+html{
+	background-color: rgb(234, 116, 255);
+	
+}
+
+body {
+	font-size: 100%;
+}
+#wrapper{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+footer{
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	background-color: rgb(58,11,62);
+	box-shadow: 0em 0em 2vmax 0.5vmax black;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	font-family: "Gill Sans", sans-serif;
+	text-align: center;
+	color: black;
+}
+
+
+.section{
+	position: relative;
+	width: 100%;
+	background-color:red;
+
+}
+
+
+
+/****************RESPONSIVE_HEADER****************/
+
+#monHeader{
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	margin: 0;
+	background-color: rgb(58,11,62);
+	box-shadow: 0em 0em 2vmax 0.5vmax black;
+}
+.container{
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	align-content: center
+
+}
+#monHeader h1 {
+	font-family: "Gill Sans", sans-serif;
+	text-align: center;
+	color: white;
+}
+[class*="col-"] {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	width: 33%;
+	height: inherit;
+}
+#embedded_logo{
+	right: 0;
+	width: 100%;
+	height:inherit;
+}
+
+/************BURGER***********/
+
+	/***********DIV_DU_CONTOUR_DU_HAMB_ZONEDECLICK*******/
+
+	.blabla {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-top: 0%;
+		height: 100%;
+		width: 35%;
+		cursor: pointer;
+		background-color: transparent;
+	}
+
+	/********MENU_CACHE**********************/
+	.menu{
+		position: absolute;
+		background-color:rgb(207,215,222) ;
+		top: 0;
+		left: -5%;
+		opacity: 0;
+		width: 0;
+		height:0;
+		border: 0.1em solid rgb(58,11,62);
+		box-shadow: 0em 0em 2vmax 0.1vmax black;
+		transition: 0.6s;
+	}
+	/**********MENU_FINAL_DEPLIE****************/
+
+	.menuChangeOff{
+		position:fixed;
+		display: flex;
+		flex-direction: column;
+		opacity:1;
+		align-content: space-around;
+		width: 25%;
+		padding-top: 10%;
+		background-color:rgb(207,215,222) ;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 50px;
+		background-color: rgb(84,44,81);
+		border: 0.15em solid rgb(58,11,62);
+		box-shadow: 8px 8px 4px grey;
+		transition: 0.6s;
+		z-index: 10;
+	}
+	.button_menu{
+		position: relative;
+		background-color: rgb(58,11,62);
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 2%;
+		border-radius: 25px;
+		box-shadow: 0em 0em 1vmax 0.05vmax black;
+		cursor: pointer;
+	}
+	.button_menu p{
+		color: white;
+	}
+	.button_menu a{
+		text-decoration:none;
+	} 
+
+	/**************_3BARS_DU_HAMB*****************/
+
+	.bar1, .bar2, .bar3 {
+		position: relative;
+		box-sizing: border-box;
+		width: 50%;
+		height: 10%;
+		margin-bottom: 10%;
+		background-color: rgb(153, 71, 144);
+		left:25%;
+		transition: 0.4s;
+		top: 20%;
+	}
+
+	/******ANIM_DES_BARS*********/
+
+	.change .bar1 {
+		-webkit-transform: translateY(240%);
+		transform: translateY(240%);
+	}
+	.change .bar2 {
+		opacity: 0;
+	}
+	.change .bar3 {
+		-webkit-transform: translateY(-240%);
+		transform: translateY(-240%);	
+	}
+
+/***************TABLEAU***************/
+.bloc_fond { 
+	height:100%;
+	margin-top: 15%;
+	padding-bottom: 10%;
+	background-color:rgba(255, 255, 255, 0.2);
+		
+}
+
+.bloc_fond2 {
+	width: 99%;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-bottom: 10%;
+}
+.bloc_fond h3 {
+	margin-bottom: 5%;
+	font-size: 2rem;
+}
+.activite h4{
+	text-align: left;
+	margin: 2%;
+}
+
+/***************COMPETENCES***************/
+.container_reponse{
+	clear: both;
+}
+.container_reponse div{
+	float: left;
+	margin-top: 2%;
+} 
+.col-titre1{
+	width: 30%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+[class*="col-reponse-"]{
+	width: 15%;
+}
+[class*="col-reponse-"] p{
+	text-align: center;
+}
+
+
+/*****************SLIDER******************/
+
+.slider {
+	width: 50%;
+	margin-left: 40%;
+	margin-right: 10%
+}
+.mon_slider{
+	width: 100%;
+}
+.slider input[type=range] {
+    -webkit-appearance: none;
+    background-color: purple;
+    border-radius: 12px;
+    width: 100%;
+    height:10px; 
+}
+
+/*.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 60px;
+    
+}
+
+.slider input[type="range"]::-moz-slider-thumb {
+     -webkit-appearance: none;
+    width: 10px;
+    height: 26px;
+    
+}
+*/
+/*********************MEDIA_QUERIES***************/
+
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		body {
+			font-size: 0.5rem;
+		}
+		#monHeader {
+			min-height: 22.22px;
+			max-height: 44.44px;
+		}
+		.menuChangeOff{
+			height: 25%;
+		}
+		footer {
+			min-height: 14.8px;
+			max-height: 29.6px;
+		}
+	}
+
+	@media (min-width: 480px) and (max-width: 720px) {
+		body {
+			font-size: 0.75rem;
+		}
+		#monHeader {
+			min-height: 33.33px;
+			max-height: 66.66px;
+		}
+		.menuChangeOff{
+			height: 40%;
+		}
+		footer {
+			min-height: 22.22px;
+			max-height: 44.44px;
+		}
+	}
+	@media (min-width: 720px) and (max-width: 1280px) {
+		body {
+			font-size: 0.9rem;
+		}
+		#monHeader {
+			min-height: 50px;
+			max-height: 100px;
+		}
+		.menuChangeOff{
+			height: 40%;
+			width: 15%;
+		}
+		footer {
+			min-height: 33.33px;
+			max-height: 66.66px;
+		}
+	}
+	@media (min-width: 1280px) and (max-width: 1440px) {
+		body {
+			font-size: 1.25rem;
+		}
+		#monHeader {
+			min-height: 75px;
+			max-height: 150px;
+		}
+		.menuChangeOff{
+			height: 50%;
+			width: 15%;
+		}
+		footer {
+			min-height: 50px;
+			max-height: 100px;
+		}
+	}
+	@media (min-width: 1440px) and (max-width: 1920px) {
+		body {
+			font-size: 1.50rem;
+		}
+		#monHeader {
+			min-height: 100px;
+			max-height: 200px;
+		}
+		.menuChangeOff{
+			height: 50%;
+			width: 15%;
+		}
+		footer {
+			min-height: 75px;
+			max-height: 150px;
+		}
+	}
+	@media (min-width: 1921px) {
+		body {
+			font-size: 1.75rem;
+		}
+		#monHeader {
+			min-height: 150px;
+			max-height: 300px;
+		}
+		.menuChangeOff{
+			height: 50%;
+			width: 15%;
+		}
+		footer {
+			min-height: 100px;
+			max-height: 200px;
+		}
+	}

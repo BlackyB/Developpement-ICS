@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Suite de Fibonacci</title>
+</head>
+<body>
+	<!-- Fibonacci -->
+	<input id="repetition" type="number" name="number" value="0" onchange="attrValue()">
+	<input type="button" value="execFunctionFibo" name="test" onclick="fibonacci()">
+	<hr/>
+	<!-- Moyenne -->
+	<div>
+		<input class="inputNote" type="number" name="note1" value="" min="0" max="20" step="0.5" placeholder="note">
+		<input class="inputCoef" type="number" name="coeff1" value="0" min="1" placeholder="coefficient">
+	</div>
+	<div>
+		<input class="inputNote" type="number" name="note2" value="" min="0" max="20" step="0.5" placeholder="note">
+		<input class="inputCoef" type="number" name="coeff2" value="0" min="1" placeholder="coefficient">
+	</div>
+	<div>
+		<input class="inputNote" type="number" name="note3" value="" min="0" max="20" step="0.5" placeholder="note">
+		<input class="inputCoef" type="number" name="coeff3" value="0" min="1" placeholder="coefficient">
+	</div>
+	<div>
+		<input class="inputNote" type="number" name="note4" value="" min="0" max="20" step="0.5" placeholder="note">
+		<input class="inputCoef" type="number" name="coeff4" value="0" min="1" placeholder="coefficient">
+	</div>
+	<div>
+		<input type="button" name="calcul" value="Calculer la moyenne" onclick="moyenne()">
+		<p id="moyenne"></p>
+	</div>
+	<hr/>
+	<!-- Algo 1-->
+	<h1>Algo 1</h1>
+
+	<p>Trouve le nombre mystère :</p>
+	<select id="lvl">
+		<option value="100">Facile (100)</option>
+		<option value="500">Normal (500)</option>
+		<option value="1000">Difficile (1000)</option>
+	</select>
+	<input type="button" name="startRandom" value="Génerer un nombre aléatoire à trouver" onclick="generateRandom()">
+	<input id="currentGuess" type="number" name="trouveNombre" placeholder="Proposition" min="0" step="1" >
+	<input type="button" name="envoiNombre" value="Envoyer Proposition" onclick="guessNumber()">
+	<p id="resultatRandom"></p>
+
+	<hr/>
+	<!-- Algo 2-->
+	<h1>Algo 2</h1>
+	<input id="inputAlgo2" type="number" name="nombre100" min="0" max="100" step="1" placeholder="Entre 0 et 100">
+	<input type="button" value="Envoyer" name="envoiAlgo2" onclick="calculTotal()">
+	<p id="totalNombre">La liste est vide</p>
+
+	<hr/>
+	<!-- Algo 3-->
+	<h1>Algo 3</h1>
+	<p>Combien de nombres voulez vous dans votre tableau ?</p>
+	<input type="number" id="iter" name="iter" value="20" placeholder="Combien de nombres voulez vous ajouter ?" min="1">
+	<p>Nombre à ajouter au tableau</p>
+	<input id="nouveauNombre" type="number" name="entrie" placeholder="Entrer un nombre" min="0" step="1" value="1">
+	<input type="submit" name="envoi" value="Ajouter votre nombre" onclick="pushEntrie()">
+	<input type="reset" name="miseAZero" value="Recommencer à 0" onclick="resetArray()">
+	<p id="resultatMax">Pas de résultat à afficher pour le moment</p>
+	<p id="contenuTableau"></p>
+	<hr/>
+
+	<!-- Algo 4 -->
+	<h1>Algo 4</h1>
+	<input id="spawnNumber" type="button" name="spawnNumber" value="Generer nombre" onclick="randomNumber()">
+	<input id="sortTableauAlgo4" type="button" name="sortButton" value="Classer les nombres" onclick="sortBy()">
+	<input type="button" name="resetRandom" value="Réinitialiser" onclick="resetRandom()">
+	<p id="contenuTableauAlgo4"></p>
+	<hr/>
+
+	<!-- Algo 5-->
+	<h1>Algo 5</h1>
+	<input id="monTexte" type="text" name="monTexte" oninput="changeColor()">
+	<p id="showText">Tapez une phrase</p>
+	<hr/>
+
+	<!-- Algo 6-->
+	<h1>Algo 6</h1>
+	<p>Entrer un entier positif</p>
+	<input id="entierPositif" type="number" name="premier"  step="1" value="" min="0" placeholder="Entrer un entier positif">
+	<input type="submit" name="envoiPremier" value="Envoyer votre entier positif" onclick="comparePremier()">
+
+
+	
+</body>
+</html>
+
+<script>
+// Suite Fibonacci
+var n;
+function attrValue(){
+	var x = document.getElementById("repetition").value;
+	n = x;
+}
+function fibonacci(){
+	var nbInit = 1;
+	var previous = 0;
+	var current = previous + nbInit;
+	for (var i = 0; i < n; i++) {
+		current = current + previous;
+		console.log(previous);
+		previous = current - previous;
+	}
+}
+// Moyenne
+
+function moyenne(){
+	var general=0;
+	var totalCoef=0;
+	note = document.getElementsByClassName('inputNote')
+	coef = document.getElementsByClassName('inputCoef')
+	for (var i = 0; i < note.length++; i++) {
+		var grade = note[i].value;
+		var coeficient = coef[i].value;
+		var total = parseInt(grade*coeficient);
+		general += total;
+		totalCoef += parseInt(coeficient);
+	}
+	var moyenneG = 0;
+	moyenneG = parseInt(general)/parseInt(totalCoef);
+	var resultat = document.getElementById('moyenne');
+	resultat.innerHTML = moyenneG;
+}
+// ALGO 1
+var target;
+function generateRandom(){
+	var max = document.getElementById('lvl').value; 
+	target = Math.trunc(Math.random()*Math.floor(max));
+	alert("Amusez vous bien (Nombre compris entre " + 0 + " et " + max +")");
+}
+
+function guessNumber(){
+	var currentGuess;
+	var showResult;
+	showResult = document.getElementById('resultatRandom');
+	currentGuess = document.getElementById('currentGuess').value;
+	if (currentGuess < target) {
+		showResult.innerHTML = "C'est plus !"
+	} else if (currentGuess > target) {
+		showResult.innerHTML = "C'est moins !"
+	} else {
+		showResult.innerHTML = "Bien joué, la bonne réponse était " + target;
+	}
+}
+
+// ALGO 2 
+function calculTotal(){
+	var inputUserAlgo2;
+	var totalAlgo2;
+	totalAlgo2 = 0;
+	inputUserAlgo2 = parseInt(document.getElementById('inputAlgo2').value);
+	for (var i = 0; i < inputUserAlgo2 + 1; i++){
+		totalAlgo2 += i;
+	}
+	document.getElementById('totalNombre').innerHTML = "Le total des nombres précédents " + inputUserAlgo2 + " est de " + totalAlgo2;
+}
+
+
+// ALGO 3
+var arrayEntries = [];
+
+function resetArray(){
+	if (arrayEntries == null) {
+		alert('Veuillez rentrer la quantité de nombres que vous souhaitez ajouter au tableau')
+	} else {
+		arrayEntries = []
+		document.getElementById('resultatMax').innerHTML = "Tableau réinitialisé";
+	}
+}
+
+function pushEntrie(){
+	var currentEntrie = document.getElementById('nouveauNombre').value;
+	var nbMax = document.getElementById('iter').value;
+	if (arrayEntries.length < nbMax) {
+		arrayEntries.push(currentEntrie);
+		arrayEntries.sort(function(a , b){
+			return a - b;
+		});
+		document.getElementById('contenuTableau').innerHTML = "Nombres actuellement contenus dans le tableau :" + arrayEntries;
+		document.getElementById('resultatMax').innerHTML = "Le plus grand nombre rentré pour le moment est " + arrayEntries[arrayEntries.length - 1];
+	} else if (arrayEntries.length==0) {
+		alert('Veuillez entrer au moins un nombre')
+	} else {
+		alert('Vous avez déja entré ' + nbMax + ' nombres')
+	}
+}
+// ALGO 4
+var allRandoms;
+allRandoms = [];
+function randomNumber(){
+	var currentRandom;
+	currentRandom = Math.trunc(Math.random()*Math.floor(100));
+	allRandoms.push(currentRandom);
+	// for (var i = 0; i < allRandoms.length; i++) {
+	// 	allRandoms[i]
+	// }
+	document.getElementById('contenuTableauAlgo4').innerHTML +=currentRandom + " ";
+}
+function sortBy(){
+	allRandoms.sort(function(a , b){
+		return a - b;
+	});
+	document.getElementById('contenuTableauAlgo4').innerHTML = allRandoms;
+}
+function resetRandom(){
+	allRandoms = [null];
+	document.getElementById('contenuTableauAlgo4').innerHTML = "";
+}
+
+
+//ALGO 5
+function changeColor(){
+	var maPhrase;
+	maPhrase = document.getElementById('monTexte').value;
+	maSortie = document.getElementById('showText');
+	maSortie.innerHTML = "Vous avez écrit " + maPhrase;
+	if (maPhrase.length < 10) {
+		maSortie.style.color = "blue";
+		console.log('Moins de 10');
+	} else if (maPhrase.length >= 10 && maPhrase.length < 50){
+		maSortie.style.color = "green";
+		console.log('Entre 10 et 50');
+	} else {
+		maSortie.style.color = "red";
+		console.log('Plus de 50');
+	}
+}
+
+// ALGO 6
+function comparePremier (){
+	var inputUser;
+	inputUser = document.getElementById('entierPositif').value;
+
+	if (inputUser == ""){
+		alert("T' es con ou quoi ?! Rentre un chiffre !");
+	} else if (inputUser == "0"){
+		alert("Le nombre n'est pas premier");
+	} else if (inputUser == "1"){
+		alert("Le nombre n'est pas premier");
+	} else { 
+		var diviseurs;
+		diviseurs = [];
+		for (var i = 0; i < inputUser + 1; i++){
+			if (Number.isInteger(inputUser / i)) {
+				diviseurs.push(inputUser / i);
+			}
+		}
+		alert(diviseurs.length);
+		if (diviseurs.length > 2){
+			alert("Le nombre n'est pas premier");
+		} else {
+			alert("Le nombre est premier");
+		}
+		alert("Diviseurs : " + diviseurs);
+	}
+}
+</script>

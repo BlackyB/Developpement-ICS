@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+}
+h1{
+	text-align: center;
+	margin: 20px 0;	
+}
+#dead{
+	position: absolute;
+	color: red;
+	font-size: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	transform: rotate(-5deg);
+	left: 32.5%;
+	opacity: 0;
+	transition: ease-in 0.25s;
+}
+#restart1{
+	width: 20%;
+	margin: 50px auto;
+}
+#restart2{
+	width: 30%;
+	margin: 0 auto;
+}
+#wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#gauche {
+	padding: 75px 0;
+	width: 40%;
+}
+#gauche section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5% auto;
+	width: 50%;
+}
+#droite {
+	padding: 20px 150px;
+	width: 60%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+#droite div{
+	position: absolute;
+	transition: ease-in 0.2s;
+	opacity: 0;
+}
+#jauge{
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.noir {
+	background-color: black;
+}
+.marron {
+	background-color: #633d07;
+}
+#poteau {
+	top: 30vh;
+	width: 3vh;
+	height: 40vh;
+	right: 40vh;
+}
+#socle {
+	top: 70vh;
+	right: 30vh;
+	width: 25vh;
+	height: 2.5vh;
+}
+#barre {
+	top: 30vh;
+	height: 2vh;
+	width: 15vh;
+	right: 40vh;
+}
+#diag {
+	height: 2vh;
+	width: 12vh;
+	right: 40vh;
+	top: 34vh;
+	transform: rotate(45deg);
+}
+#corde{
+	width: 0.5vh;
+	height: 10vh;
+	right: 2.25vh;
+	top: -0.1vh;
+}
+#bonhomme{
+	position: absolute;
+	transform-origin: center top;
+	opacity: 1;
+	right: 50vh;
+	top: 32vh;
+}
+#tete{
+	width: 5vh;
+	height: 5vh;
+	right: 0vh;
+	top: 10vh;
+	border-radius: 50%;
+}
+#corps{
+	width: 1vh;
+	height: 10vh;
+	right: 2vh;
+	top: 15vh;
+}
+#brasG{
+	width: 8vh;
+	height: 0.5vh;
+	right: 0.4vh;
+	top: 20vh;
+	transform: rotate(110deg);
+}
+#brasD{
+	width: 8vh;
+	height: 0.5vh;
+	right: -3.2vh;
+	top: 20vh;
+	transform: rotate(-110deg);
+}
+#jambeG{
+	width: 8vh;
+	height: 0.5vh;
+	top: 28vh;
+	right: -0.5vh;
+	transform: rotate(-80deg);
+}
+#jambeD{
+	width: 8vh;
+	height: 0.5vh;
+	top: 28vh;
+	right: -2.5vh;
+	transform: rotate(80deg);
+}
+section, select, input{
+	text-align: center;
+}

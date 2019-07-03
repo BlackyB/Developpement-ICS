@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trombinoscope</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div class="menu" id="menu">
+			<label for="toogle">
+				<div class="button_menu" onclick="closemenuFunction()">
+					<p>Trombinoscope</p>
+				</div>	
+			</label>
+			<a href="autoeval.html">
+			<div class="button_menu">
+				<p>Mon Auto Evaluation</p>
+			</div>
+			</a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">
+			<div class="button_menu">
+				<p>Contacts</p>
+			</div>
+			</a>
+		</div>	
+		<section class="section">
+			<div id="monHeader">
+				<div class="container">
+					<div class="col-1">
+
+						<!-- MENU BURGER -->
+
+						<div class="blabla" id="blabla" onclick="menuFunction(this)">
+							<div class="bar1" id="bar1"></div>
+							<div class="bar2" id="bar2"></div>
+							<div class="bar3" id="bar3"></div>
+						</div>
+					</div>
+					<div class="col-2">
+						<h1>Developpeur Web <br /> Web Mobile</h1>
+					</div>
+					<div class="col-3">
+						<img id="embedded_logo" src="img/logo_ics.png" alt="logo ICS">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="slider_central" >
+				<img class="mySlides" src="img/ambiance-1.jpg" alt="Image de salle de cours">
+				<img class="mySlides" src="img/ambiance-2.jpg" alt="Image de salle de cours">
+				<!--<img class="mySlides" src="img/ambiance-3.jpg" alt="Portrait de Dimitri">-->
+				<img class="mySlides" src="img/ambiance-4.jpg" alt="Image de salle de cours">
+				<img class="mySlides" src="img/ambiance-5.jpg" alt="Image de salle de cours">
+				<img class="mySlides" src="img/ambiance-6.jpg" alt="Image de salle de cours">
+				<img class="mySlides" src="img/ambiance-7.jpg" alt="Image de salle de cours">
+			</div>
+		</section>
+
+		<section>
+			<input type="checkbox" name="toogle" id="toogle"/>
+			<div id="volet">
+				<label for="toogle">
+					<div id="selecteur">
+						<div id="button">
+							<img id="arrow" src="img/chevron.png" alt="Fleche">
+						</div>
+					</div>
+				</label>
+				<br>
+				<br>
+				<div id="rounded_container">
+					<h3>Trombinoscope</h3>
+				</div>
+				<div class="row_mosa">
+
+					<!--Colonne de Gauche -->
+
+					<div class="col-m-1">
+						<img class="portrait" id="portrait_adel" src="img/X_Adel_C.jpg" alt="Portrait de Adel" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Abdellatif</p>
+						<img class="portrait" src="img/X_Antoine_C.jpg" alt="Portrait de Antoine" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Antoine</p>
+						<img class="portrait" src="img/X_Dimitri_C.jpg" alt="Portrait de Dimitri" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Dimitri</p>
+						<img class="portrait" src="img/X_Jonathan_C.jpg" alt="Portrait de Jonathan" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Jonathan</p>
+						<img class="portrait" src="img/X_Marie_C.jpg" alt="Portrait de Marie" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Marie Amandine</p>
+						<img class="portrait" src="img/X_Radhwa_C.jpg" alt="Portrait de Radhwa" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Radhwa</p>
+						<img class="portrait" src="img/X_Tim_C.jpg" alt="Portrait de Tim" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Tim</p>
+					</div>
+
+					<!--Colonne du Milieu-->
+
+					<div class="col-m-2">
+						<img class="portrait" src="img/X_Anaelle_C.jpg" alt="Portrait de Anaelle" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Anaelle</p>
+						<img class="portrait" src="img/X_Damien_C.jpg" alt="Portrait de Damien" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Damien</p>
+						<img class="portrait" src="img/X_Isabelle_C.jpg" alt="Portrait de Isabelle" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Isabelle</p>
+						<img class="portrait" src="img/X_Magali_C.jpg" alt="Portrait de Magali" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Magali</p>
+						<img class="portrait" src="img/X_Maxence_C.jpg" alt="Portrait de Maxence" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Maxence</p>
+						<img class="portrait" src="img/X_Sebastien_C.jpg" alt="Portrait de Sebastien" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Sebastien</p>
+						<img class="portrait" src="img/X_Younes_C.jpg" alt="Portrait de Younes" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Younes</p>
+					</div>
+
+					<!--Colonne de Droite -->
+
+					<div class="col-m-3">
+						<img class="portrait" src="img/X_Anthony_C.jpg" alt="Portrait de Anthony" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Anthony</p>
+						<img class="portrait" src="img/X_Diliana_C.jpg" alt="Portrait de Diliana" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Dilyana</p>
+						<img class="portrait" src="img/X_James_C.jpg" alt="Portrait de James" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">James</p>
+						<img class="portrait" src="img/X_Mariana_C.jpg" alt="Portrait de Mariana" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Mariana</p>
+						<img class="portrait" src="img/X_PAlexis_C.jpg" alt="Portrait de P-Alexis" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Alexis-Mathieu</p>
+						<img class="portrait" src="img/X_Sophie_C.jpg" alt="Portrait de Sophie" onclick="imclickFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p class="name">Sophie</p>
+						<img  id="unknowr" src ="img/Mystery.jpg" alt="uknow" onclick="unkowFunction(this)" onmouseover="hovFunction(this)" onmouseout="mouseFunction(this)">
+						<p id="unkname">Unknown</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script>
+
+			//********CLICK_PHOTO***********////
+
+			function imclickFunction(x){
+				x.classList.toggle("portraitclick");
+
+			}
+
+			//*******************JS_OVER******************//
+
+			function hovFunction(x){
+				x.classList.toggle("portraithover");
+			}
+			
+
+			function mouseFunction(x){
+				x.classList.toggle("portraithover");
+			}
+			
+
+			//***********ANIM_DU_MENU_**************************//
+			function toggleElement(){
+				document.getElementById("bar1").classList.toggle("bar1c");
+				document.getElementById("bar2").classList.toggle("bar2c");
+				document.getElementById("bar3").classList.toggle("bar3c");
+				document.getElementById("menu").classList.toggle("menuChangeOff");
+			}
+			function menuFunction() {
+				toggleElement();
+			}
+
+			//********ANIM_DU_MENU_VIA_CLICK_TROMBI***********//
+			function closemenuFunction(){
+				toggleElement();
+			}	
+
+
+
+			function unkowFunction(x){
+				document.getElementById("unknowr").src ="img/Remy.jpg";
+				x.classList.toggle("unknowrClick");
+				document.getElementById("unkname").textContent ="Remy";
+
+
+			}
+		
+
+			//******CARROUSEL************//
+			var slideIndex = 0;
+			carousel();
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1}
+					x[slideIndex-1].style.display = "block";
+				setTimeout(carousel, 2500);
+			}
+		</script>
+	</body>
+	</html>

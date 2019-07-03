@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recréer une page e-commerce</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<!-- Header -->
+		<section id="myHeader">
+			<section id="titre">
+
+				<!-- 	<form id="recherche" method="get" action="">
+						<input type="text" name="SearchBar" placeholder="Recherche">
+						<button type="submit">Chercher</button>
+					</form> -->
+
+					<h1>Factory - Design</h1>
+
+					<!-- <img id="cart" src="img/cart.png" alt=""> -->
+
+				</section>
+				<nav>
+					<a href="ecommerce.html"><h2>Accueil</h2></a>
+					<a href="promotions.html"><h2>Boutique</h2></a>
+					<a href="atelier.html"><h2>Atelier</h2></a>
+					<a href="realisations.html"><h2>Realisations</h2></a>
+					<a href="artisans.html"><h2>Artisans</h2></a>
+					<a><h2 id="contact">Contactez nous</h2></a>
+				</nav>
+				<!-- Formulaire de contact -->			
+				<section id="contactFormModal">
+					<span class="closeForm">&times;</span>
+					<div class="container">
+						<form action="POST">
+							<div id="champText">
+								<!-- Prénom -->
+								<label for="fname">Prénom</label>
+								<input type="text" id="fname" name="firstname" placeholder="Votre prénom.." required>
+								<!-- Nom -->
+								<label for="lname">Nom</label>
+								<input type="text" id="lname" name="lastname" placeholder="Votre nom.." required>
+								<!-- Pays -->
+								<label for="country">Pays</label>
+								<select id="country" name="country" required>
+									<option value="default">Choisir votre Pays</option>
+									<option value="france">France</option>
+									<option value="italia">Italie</option>
+									<option value="spain">Espagne</option>
+								</select>
+							</div>
+							<!-- Envoi -->
+							<label for="subject">Sujet</label>
+							<textarea id="subject" name="subject" placeholder="Ecrivez votre message.." style="height:200px" required></textarea>
+							<input id="envoi" type="submit" value="Envoyer">
+						</form>
+					</div> 
+				</section>
+			</section>
+			<section id="banner">
+				<h1>Meubles industriels mobilier vintage</h1>
+			</section>
+			<!-- Gallerie du mois -->
+			<section id="gallery">
+				<h2 class="une">Affaires du Mois</h2>
+				<div id="rowImage">
+					<div class="image">
+						<img class="miniature" id="myImg" src="img/comptoir.jpg" alt="Comptoir métallique">
+						<p>Comptoir metallique</p>
+						<img src="img/loupe.png" alt="" class="loupe">
+					</div>
+					<div id="myModal1" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img1" src="0" alt="">
+					</div>
+					<div class="image">
+						<img class="miniature" src="img/meuble_tele.jpg" alt="Meuble Television">
+						<p>Meuble television</p>
+						<img src="img/loupe.png" alt="" class="loupe">
+					</div>
+					<div id="myModal2" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img2" src="0" alt="">
+					</div>
+					<div class="image">
+						<img class="miniature" src="img/meuble_tele_2.jpg" alt="Meuble Television">
+						<p>Casier metallique horizontal</p>
+						<img src="img/loupe.png" alt="" class="loupe">
+					</div>
+					<div id="myModal3" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img3" src="0" alt="">
+					</div>
+					<div class="image">
+						<img class="miniature" src="img/neon.jpg" alt="Lampe Néon">
+						<p>Lampe Neon</p>
+						<img src="img/loupe.png" alt="" class="loupe">
+					</div>
+					<div id="myModal4" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img4" src="0" alt="">
+					</div>
+				</div>
+			</section>
+			<!-- Section Texte Principale -->
+			<section id="bodyText">	
+				<h2 class="une">Un savoir faire authentique</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et nibh interdum, fermentum tortor ut, bibendum ante. Pellentesque fringilla, neque sed volutpat tristique, odio urna convallis est, at cursus lectus nisi at nulla. In hac habitasse platea dictumst. Praesent feugiat accumsan dui, sed ultricies mi fringilla ac. Etiam nibh magna, lacinia non cursus a, consequat at turpis. Ut sollicitudin faucibus tellus, ac eleifend erat eleifend et. Donec vitae ipsum ac purus fringilla pellentesque id vel orci. Donec in pulvinar magna. Nullam non justo sit amet sapien condimentum blandit at sed nunc. Pellentesque congue ante urna, sed pellentesque enim aliquam a. Ut vel elit quis lectus sollicitudin elementum sed ac sem. Nulla mollis efficitur nibh sit amet fermentum. Mauris imperdiet placerat condimentum.</p>
+				<hr/>
+				<p>Nunc semper malesuada nunc et fermentum. Nunc id nisl eget ipsum ultrices rutrum nec ut dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus quis sem dictum, pharetra arcu ut, interdum tortor. Duis ullamcorper lectus et elit rhoncus, eu vestibulum dolor luctus. Ut luctus libero sed egestas posuere. Morbi commodo sodales ligula at pharetra. Donec sed tortor et massa lobortis euismod. Praesent eu placerat odio. Nulla fringilla nibh nunc, sit amet consequat lectus venenatis quis.</p>
+			</section>
+			<!-- Reseaux Sociaux -->
+			<section id="reseau">
+				<div id="logo">
+					<div>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img class="logo" src="img/facebook.svg" alt="Logo Facebook">
+						</a>
+					</div>
+					<div>
+						<a href="https://twitter.com/?lang=fr" target="_blank">
+							<img class="logo" src="img/twitter.svg" alt="Logo Twitter">
+						</a>
+					</div>
+					<div>
+						<a href="https://www.google.fr/maps" target="_blank">
+							<img class="logo" src="img/map-marker.svg" alt="Logo Magasin">
+<!-- 						<div id="coord">
+							<a href="mailto:FactoryDesign@gmail.com?subject=Prise de contact">FactoryDesign<span id="arobase">@</span>gmail.com</a>
+							<p>04.93.00.00.00</p>
+						</div> -->
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script>
+
+	//Modal Images
+	var span = document.getElementsByClassName("close");
+	for (var i = 0; i < span.length; i++) {
+		span[i].addEventListener("click", function(){
+			this.parentNode.style.display = "none";
+		});
+	}
+	var imgs = document.getElementsByClassName("miniature");
+	var loupes = document.getElementsByClassName("loupe");
+	for (var i = 0; i < imgs.length; i++) {
+		imgs[i].addEventListener("click", function(){
+			var mod = this.parentNode.parentNode.querySelector(".modal");
+			mod.querySelector(".modal-content").src = this.src;
+			mod.style.display = "block";
+		});
+		loupes[i].addEventListener("click", function(){
+			var mod = this.parentNode.parentNode.querySelector(".modal");
+			mod.querySelector(".modal-content").src = this.parentNode.querySelector(".miniature").src;
+			mod.style.display = "block";
+		});
+	}
+
+	//Modal Form
+	var modalForm = document.getElementById('contactFormModal');
+	var contactButton = document.getElementById('contact');	
+	contactButton.onclick = function(){
+		modalForm.style.display = "block";
+	}
+	var span = document.getElementsByClassName("closeForm")[0];
+	span.onclick = function() {
+		modalForm.style.display = "none";
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('Typewriter_Condensed-Bold.woff2') format('woff2'),
+        url('Typewriter_Condensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

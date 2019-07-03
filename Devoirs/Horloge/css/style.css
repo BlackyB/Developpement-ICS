@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.cadran{
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid black;
+	margin: 50px auto;
+}
+.aiguille{
+	position: relative;
+	top: 250px;
+	height: 5px;
+	margin: 0 auto;
+	background-color: black;
+	transform-origin: left;
+}
+#heure{
+	left: 75px;
+	width: 150px;
+	height: 8px
+}
+#minute{
+	top: 245px;
+	height: 6px;
+	left: 112.5px;
+	width: 225px;
+}
+#seconde{
+	top: 240px;
+	left: 112.5px;
+	width: 225px;
+	background-color: red;
+}
+#cercle{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	top: 226px;
+	left: 233.5px;
+	background-color: black;
+}

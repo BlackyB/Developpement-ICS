@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calendrier</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section id="calendrier">
+		<div class="row">
+			<input type="button" name="boutonY" value="<<" id="yearNeg">
+			<input type="button" name="boutonM" value="<" id="monthNeg">
+			<input type="button" name="boutonM" value="-" id="dayNeg">
+		</div>
+		<p id="jour"></p>
+		<div class="row">
+			<input type="button" name="boutonM" value="+" id="dayPos">
+			<input type="button" name="boutonM" value=">" id="monthPos">
+			<input type="button" name="boutonY" value=">>" id="yearPos">
+		</div>
+		<div class="row nav">
+			<input type="number" name="" id="jourInput" placeholder="Rentrer jour" value="">
+			<input type="number" name="" id="moisInput" placeholder="Rentrer mois" value="">
+			<input type="number" name="" id="anInput" placeholder="Rentrer année" value="">
+			<input type="button" name="" id="goToDate" value="Aller à la date">
+		</div>
+	</section>
+	<section>
+
+		<div class="col center" id="central">
+			<div id="header">
+				<h2>Calendrier</h2>
+			</div>
+			<div class="row bordure largeur" id="entete">
+				<h4>Dimanche</h4>
+				<h4>Lundi</h4>
+				<h4>Mardi</h4>
+				<h4>Mercredi</h4>
+				<h4>Jeudi</h4>
+				<h4>Vendredi</h4>
+				<h4>Samedi</h4>
+			</div>
+			<div class="row bordure largeur" id="tableau">
+			</div>
+		</div>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>

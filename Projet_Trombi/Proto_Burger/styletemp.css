@@ -1,0 +1,221 @@
+/*
+/*************************MAIN***********************/
+
+body {
+	font-size: 100%;
+}
+#wrapper{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+footer{
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	background-color: rgb(58,11,62);
+	box-shadow: 0em 0em 2vmax 0.5vmax black;
+}
+
+.section{
+	position: relative;
+	width: 100%;
+	background-color: red;
+
+}
+
+/****************RESPONSIVE_HEADER****************/
+
+#monHeader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	margin: 0;
+	background-color: rgb(58,11,62);
+	box-shadow: 0em 0em 2vmax 0.5vmax black;
+}
+.container{
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	align-content: center
+
+}
+h1{
+	font-family: "Gill Sans", sans-serif;
+	text-align: center;
+	color: white;
+}
+[class*="col-"] {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	width: 33%;
+	height: inherit;
+}
+#embedded_logo{
+	right: 0;
+	width: 100%;
+	height:inherit;
+}
+
+/***********DIV_DU_CONTOUR_DU_HAMB_ZONEDECLICK*******/
+
+.blabla {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin-top: 0%;
+	height: 100%;
+	width: 35%;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+/********MENU_CACHE**********************/
+.menu{
+	position: absolute;
+	background-color:rgb(207,215,222) ;
+	top: 0;
+	left: 0;
+	width: 0;
+	height:0;
+	border: 0.1em solid rgb(58,11,62);
+	box-shadow: 0em 0em 2vmax 0.1vmax black;
+	transition: 0.6s;
+}
+/**********MENU_FINAL_DEPLIE****************/
+.menuChangeOff{
+	position: absolute;
+	background-color:rgb(207,215,222) ;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 50%;
+	border-bottom-right-radius: 50px;
+	background-color: rgb(84,44,81);
+	border: 0.15em solid rgb(58,11,62);
+	box-shadow: 8px 8px 4px grey;
+	transition: 0.6s;
+}
+
+/**************_3BARS_DU_HAMB*****************/
+.bar1, .bar2, .bar3 {
+	position: relative;
+	box-sizing: border-box;
+	width: 50%;
+	height: 10%;
+	margin-bottom: 10%;
+	background-color: rgb(153, 71, 144);
+	left:25%;
+	transition: 0.4s;
+	top: 20%;
+}
+
+/******ANIM_DES_BARS*********/
+.change .bar1 {
+
+	-webkit-transform: translateY(250%);
+	transform: translateY(250%);
+}
+.change .bar2 {
+	opacity: 0;
+}
+.change .bar3 {
+	-webkit-transform: translateY(-250%);
+	transform: translateY(-250%);	
+}
+
+
+/*********************MEDIA_QUERIES***************/
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+	body {
+		font-size: 0.5rem;
+	}
+	#monHeader {
+		min-height: 22.22px;
+		max-height: 44.44px;
+	}
+	footer {
+		min-height: 14.8px;
+		max-height: 29.6px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+	body {
+		font-size: 0.75rem;
+	}
+	#monHeader {
+		min-height: 33.33px;
+		max-height: 66.66px;
+	}
+	footer {
+		min-height: 22.22px;
+		max-height: 44.44px;
+	}
+}
+@media (min-width: 720px) and (max-width: 1280px) {
+	body {
+		font-size: 1rem;
+	}
+	#monHeader {
+		min-height: 50px;
+		max-height: 100px;
+	}
+	footer {
+		min-height: 33.33px;
+		max-height: 66.66px;
+	}
+}
+@media (min-width: 1280px) and (max-width: 1440px) {
+	body {
+		font-size: 1.25rem;
+	}
+	#monHeader {
+		min-height: 75px;
+		max-height: 150px;
+	}
+	footer {
+		min-height: 50px;
+		max-height: 100px;
+	}
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+	body {
+		font-size: 1.50rem;
+	}
+	#monHeader {
+		min-height: 100px;
+		max-height: 200px;
+	}
+	footer {
+		min-height: 75px;
+		max-height: 150px;
+	}
+}
+@media (min-width: 1921px) {
+	body {
+		font-size: 1.75rem;
+	}
+	#monHeader {
+		min-height: 150px;
+		max-height: 300px;
+	}
+	footer {
+		min-height: 100px;
+		max-height: 200px;
+	}
+}

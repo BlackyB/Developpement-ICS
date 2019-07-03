@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="range.css">
+	<title></title>
+</head>
+<body>
+  <div class="slider">
+		<input class="mon_slider" id="slider1" onInput="retrieveValue()" type="range" min="0" max="100" step="1">	
+		<p id="show"></p>
+	</div>
+
+  <script>
+		function retrieveValue(){
+					var tag;
+					var x = document.getElementById("slider1").value;
+
+					if (x >= 0 && x <= 25) {
+						tag = "Help me";
+					}
+					else if(x >=25 && x <= 50){
+						tag = "Pas terrible";
+					}
+					else if(x >=50 && x <= 75){
+						tag = "Ca va";
+					}
+					else if(x >=75 && x <= 100){
+						tag = "Easy";
+					}
+					else{
+						tag = "Mauvais input"
+					}
+					document.getElementById("show").innerHTML = tag;
+				}
+	</script>
+</body>
+</html>

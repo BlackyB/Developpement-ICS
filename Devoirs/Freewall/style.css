@@ -1,0 +1,185 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+	color: white;
+}
+#header{
+	width: 100%;
+	height: 100px;
+	padding: 5%;
+	background-color: green;
+}
+#header p {
+	margin: 0;
+}
+#main{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1%;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#blocGauche{
+	box-sizing: border-box;
+	width: 600px;
+	margin-right: 0.5%;
+	padding: 5%;
+	background-color: blue;
+	min-width: 250px;
+}
+#rowImg{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+.img {
+	box-sizing: border-box;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#blocDroite{ 
+	box-sizing: border-box;
+	width: 50%;
+	margin-left: 0.5%
+}
+#rowTop{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#vert{
+	background-color: green;
+	width: 50%;
+	padding: 5%;
+	margin-right: 1%;
+	box-sizing: border-box;
+}
+#orange{
+	background-color: #ff9900;
+	width: 50%;
+	padding: 5%;
+	box-sizing: border-box;
+}
+#rowBottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 1%;
+}
+#vertBot{
+	background-color: green;
+	width: 75%;
+	padding: 5%;
+	box-sizing: border-box;
+	margin-right: 1%;
+}
+#redBot{
+	background-color: red;
+	width: 25%;
+	box-sizing: border-box;
+}
+#bandeau{
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 0%;
+	left: 0%;
+}
+
+@media screen and (max-width: 1199px){
+	#main{
+		padding: 0%;
+	}
+	#header{
+		height: 150px;
+	}
+	#blocGauche{
+		margin: 0%;
+		margin-top: 0.5%;
+	}
+	#blocDroite{
+		width: 100%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+	#rowTop{
+		flex-wrap: wrap;
+		margin: 0%;
+	}
+	#rowBottom{
+		flex-wrap: wrap;
+		margin:0%;
+	}
+	#vert{
+		width: 100%;
+		margin: 0%;
+		margin-top : 1%;
+	}
+	#orange{
+		width: 100%;
+		margin-top : 1%;
+	}
+	#redBot{
+		width: 100%;
+		margin-top : 1%;
+	}
+	#bandeau{
+		width: 25%;
+		left: 75%;
+	}
+	#vertBot{
+		width: 100%;
+		margin: 0%;
+		margin-top : 1%;
+	}
+	@media screen and (max-width: 600px){
+		#main{
+			padding: 0%;
+		}
+		#blocGauche{
+			margin: 0%;
+			margin-top: 0.5%;
+		}
+		#blocDroite{
+			margin: 0%;
+			margin-top: 0.5%;
+		}
+		#rowTop{
+			flex-wrap: wrap;
+			margin: 0%;
+		}
+		#rowBottom{
+			flex-wrap: wrap;
+			margin:0%;
+		}
+		#vert{
+			width: 100%;
+			margin:0%;
+			margin-top: 0.5%;
+		}
+		#orange{
+			width: 100%
+			margin:0%;
+			margin-top: 0.5%;
+		}
+		#redBot{
+			width: 100%;
+			margin:0%;
+			margin-top: 0.5%;
+		}
+		#bandeau{
+			width: 25%;
+			left: 75%;
+		}
+		#vertBot{
+			width: 100%;
+			margin:0%;
+			margin-top: 0.5%;
+		}
+	}

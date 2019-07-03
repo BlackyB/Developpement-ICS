@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>[Auto-Evaluation]</title>
+	<link rel="stylesheet" type="text/css" href="autoeval.css">
+</head>
+<body>
+	<section>
+		<div id="wrapper">
+
+			<!-- Boutons du menu déroulant -->
+
+			<div class="menu" id="menu">
+				<a href="index.html">
+				<div class="button_menu">
+					<p>Accueil</p>
+				</div>	
+				</a>
+				<a href="https://urlz.fr/4nf">
+				<div class="button_menu">
+					<p>Contacts</p>
+				</div>	
+				</a>
+			</div>
+			<section class="section">
+
+				<!-- Header Fixe -->
+
+				<div id="monHeader">
+					<div class="container">
+						<div class="col-1">
+
+							<!-- Menu Burger -->
+
+							<div class="blabla" onclick="myFunction(this)">
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+								<div class="bar3"></div>
+							</div>
+						</div>
+
+						<!-- Titre -->
+
+						<div class="col-2">
+							<h1>Mon Auto-Evaluation</h1>
+						</div>
+
+						<!-- Logo -->
+
+						<div class="col-3">
+							<img id="embedded_logo" src="img/logo_ics.png" alt="logo ICS">
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="bloc_fond">
+
+				<!-- Entête du formulaire -->
+
+				<form method="post" action="traitement.php" id="myForm">
+					<h3>Compétences professionnelles</h3>
+
+					<!-- Premier Bloc de Compétences -->
+
+					<div class="activite">
+						<h4>Développer la partie front-end<br> d’une application web ou web mobile<br> en intégrant les recommandations de sécurité</h4>
+					</div>
+					<div class="bloc_fond2">
+
+						<!-- Competences -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Maquetter une application</p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show01">Evalue toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider01" id="01" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1" >
+						</div>
+
+						<!-- Competence2 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Réaliser une interface utilisateur web statique et adaptable</p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show02">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider02" id="02" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1" >	
+						</div>
+
+						<!-- Competence3 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Développer une interface utilisateur web dynamique </p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show03">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider03" id="03" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1">	
+						</div>
+
+						<!-- Competence4 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce</p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show04">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider04" id="04" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1">	
+						</div>
+					</div>
+
+					<!-- Deuxième Bloc de Compétences-->
+
+					<div class="activite">
+						<h4>Développer la partie back-end <br>d’une application web ou web mobile<br> en intégrant les recommandations de sécurité</h4>
+					</div>
+					<div class="bloc_fond2">
+
+						<!-- Competence5 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Créer une base de données</p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show05">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider05" id="05" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1">
+						</div>
+
+						<!-- Competence6 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Développer les composants d’accès aux données </p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show06">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider06" id="06" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1">	
+						</div>
+
+						<!-- Competence7 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Développer la partie back-end d’une application web ou web mobile  </p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show07">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider07" id="07" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1">
+						</div>			
+
+						<!-- Competence8 -->
+
+						<div class="container_reponse">
+							<div class="col-titre1">
+								<p>Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce </p>
+							</div>
+							<div class="col-reponse-a">
+								<p id="show08">Evalue Toi</p>
+							</div>
+						</div>
+						<div class="slider">
+							<input class="mon_slider" name="slider08" id="08" onInput="retrieveValue(id);" type="range" value="0" min="0" max="100" step="1">	
+						</div>
+					</div>
+
+					<!-- Meteo Interieur -->
+
+					<div class="activite" id="titreMeteo">
+						<h4>Quel est ton niveau de compréhension actuel ?</h4>
+					</div>
+					<div class="container_meteo">
+						<input class="input_meteo" name="meteo_int" id="toggle-0"  value="0" type="radio" checked="checked">
+						<input class="input_meteo" name="meteo_int" id="toggle-1"  value="1" type="radio">
+						<label class="label_meteo" for="toggle-1">我什么都看不懂！</label>
+						<input class="input_meteo" name="meteo_int" id="toggle-2" value="2" type="radio">
+						<label class="label_meteo" for="toggle-2">&lt;p&gt; Basique &lt;p&gt;</label>
+						<input class="input_meteo" name="meteo_int" id="toggle-3" value="3" type="radio">
+						<label class="label_meteo" for="toggle-3"> function <br/> message("Plutot serein"); </label>
+						<input class="input_meteo" name="meteo_int" id="toggle-4" value="4" type="radio">
+						<label class="label_meteo" for="toggle-4">Passe la seconde Jacky !</label>
+					</div>
+
+					<!-- Identification -->
+
+					<div id="nomPrenom">
+						<select id="name_list" onChange="retrieveNamelist(id)">
+							<option value="1">-- Choisissez votre Nom et Prénom --</option>
+							<option value="2">ALENDA Anaëlle</option>
+							<option value="3">BARI Jonathan</option>
+							<option value="4">BIZIEN SALAUN Anthony</option>
+							<option value="5">BOULANGER Sébastien</option>
+							<option value="6">CHAILLOLEAU-GRANATO Damien</option>
+							<option value="7">DE LA TOUR Isabelle</option>
+							<option value="8">DELALONDRE Marie-Amandine</option>
+							<option value="9">EL MANDILI Abdélatif</option>
+							<option value="10">GAILLOT Dimitri</option>
+							<option value="11">GUYADER Antoine</option>
+							<option value="12">HUBERT Alexis-Mathieu</option>
+							<option value="13">MARTIN Magali</option>
+							<option value="14">MARZOUK Radhwa</option>
+							<option value="15">MORON Mariana</option>
+							<option value="16">RAVEU Sophie</option>
+							<option value="17">ROBB Tim K.</option>
+							<option value="18">ROSS James</option>
+							<option value="19">STEFANOVA Dilyana</option>
+							<option value="20">TEMAR Younes</option>
+							<option value="22">WILMES Maxcence</option>	
+						</select>
+						<input  id="champList" type="hidden" name="nom" value="">
+						<div id="buttonBottom">
+							<input id="resetButton" type="reset" value="Réinitialiser">
+							<input id="submitButton" onClick="submitCheck()"  type="button" value="Envoyer">
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+
+		<footer>
+		</footer>
+	</section>
+	<script>
+
+		// Script du menu
+
+		function myFunction(x) {
+			x.classList.toggle("change");
+			document.getElementById("menu").classList.toggle("menuChangeOff");
+		}
+
+		// DISPLAY L'ENTRIE SELECTIONNEE VIA L'INPUT RANGE
+
+		function retrieveValue(name){
+			var tag;
+			var x = document.getElementById(name).value;
+
+			if (x > 0 && x <= 20) {
+				tag = "NooB";
+			}
+			else if(x >=20 && x <= 40){
+				tag = "Je veux bien qu'on m'explique la strat";
+			}
+			else if(x >=40 && x <= 60){
+				tag = "Je te carry";
+			}
+			else if(x >=60 && x <= 80){
+				tag = "Je speed run le donjon en héroïque !";
+			}
+			else if(x >=80 && x <= 100){
+				tag = "Quoi, vous en êtes encore là dessus ? Bande de plow...";
+			}
+			else{
+				tag = "Deplacez le bouton sur la droite"
+			}
+			document.getElementById("show" + name).innerHTML = tag;
+		}
+
+		function retrieveNamelist(){
+			var valeurSelect = document.getElementById("name_list").value;
+			document.getElementById("champList").value = valeurSelect;
+		}
+
+			// CHECK SI LE FORMULAIRE EST CONFORME
+
+			var rangeCheck = false;
+			var nameTagCheck = false;
+			var meteoCheck = false;
+			function submitCheck(){
+
+				//Verif des ranges
+
+				var range = document.getElementsByClassName("mon_slider")
+				var lRange = range.length;
+				for (var i = 0; i < lRange; i++){
+					if(range[i].value >=1 && range[i].value <=100){
+						rangeCheck = true;
+					}
+					else{
+						rangeCheck = false;
+						break;
+					}
+				}
+
+				// Verification des champs texte
+
+				if (document.getElementById("name_list").value != 1 ){
+					nameTagCheck = true;
+				} 
+				else {
+					nameTagCheck = false;
+				}
+
+				// Verif Meteo
+
+
+				var rangeMeteo = document.getElementsByClassName("input_meteo");
+				var longMeteo = rangeMeteo.length;
+				for (var i = 0; i < longMeteo; i++){
+					if (rangeMeteo[i].checked && rangeMeteo[i].value !== "0" ){
+						meteoCheck = true;
+					} 
+
+				}
+
+
+
+
+				// var soleil = document.getElementsByClassName("input_meteo");
+				// if (soleil !== 0 ){
+				// 	meteoCheck = true;
+				// }
+				// else {
+				// 	meteoCheck = false;
+				// }
+
+
+				//Confirmation de l'envoi si tout est "ok"
+
+				if (rangeCheck == true && nameTagCheck == true && meteoCheck == true) {
+					alert("Formulaire envoyé");
+					document.getElementById("myForm").submit();
+				} else if (rangeCheck == true && nameTagCheck == false && meteoCheck == true){
+					alert("Merci de remplir votre nom");
+				}
+				else if (rangeCheck == false && nameTagCheck == true && meteoCheck == true) {
+					alert("Merci de vous auto-evaluer pour chaque module");
+				}
+				else if (rangeCheck == true && nameTagCheck == true && meteoCheck == false){
+					alert("Merci de cocher votre meteo interieur");
+				}
+				else{
+					alert("Merci de remplir tous les champs et de vous auto-evaluer pour chaque module ainsi que pour votre météo interieur");
+				}
+			}
+		</script>
+	</body>
+	</html>

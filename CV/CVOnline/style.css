@@ -1,0 +1,12 @@
+table, td {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+.hidden {
+	color: transparent;
+}

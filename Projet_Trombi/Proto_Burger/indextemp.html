@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>[MENU BURGER]</title>
+	<link rel="stylesheet" type="text/css" href="styletemp.css">
+</head>
+<body>
+	<!-- Page Wrapper -->
+	<div id="wrapper">
+		<div class="menu" id="menu">	
+		</div>	
+
+		<!--Section du Header-->
+		<section class="section">
+
+			<!-- Fixed Header -->
+			<div id="monHeader">
+				<div class="container">
+					<div class="col-1">
+						<!--- menu hamburger----------------->
+						<div class="blabla" onclick="myFunction(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<div class="col-2">
+						<h1>[PROTO BURGER]</h1>
+						<!-- MODIFIER FONT-SIZE ET MARGIN-TOP DANS LE CSS POUR CHAQUE RESOLUTION -->
+					</div>
+					<div class="col-3">
+						<img id="embedded_logo" src="img/logo_ics.png" alt="logo ICS">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		</footer>
+	</div>
+</body>
+<script>
+	function myFunction(x) {
+		x.classList.toggle("change");
+		document.getElementById("menu").classList.toggle("menuChangeOff");
+	}
+</script>
+</html>

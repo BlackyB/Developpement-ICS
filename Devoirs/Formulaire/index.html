@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+	<header class="top">
+		<h1>Formulaire de contact</h1>
+	</header>
+	<section class="wrapper col center bg-color">
+		<form class="bg-form padding-30 b-radius-15">
+			<label class="row">
+				<p>Nom / Société <span class="red">*</span></p>
+				<input class="inp b-radius-15" type="text" minlength="3" placeholder="Saisissez votre nom" required="required" name="Nom">
+			</label>
+			<label class="row">
+				<p>Prénom</p>
+				<input class="inp b-radius-15" type="text" placeholder="Saisissez votre prénom" name="Prénom">
+			</label>
+			<label class="row">
+				<p>Téléphone <span class="red">*</span></p>
+				<input class="inp b-radius-15" type="tel" required="required" placeholder="Saisissez votre téléphone" name="Téléphone">
+			</label>
+			<label class="row">
+				<p>Courriel <span class="red">*</span></p>
+				<input class="inp b-radius-15" type="email" required="required" placeholder="Saisissez votre adresse mail" name="Courriel">
+			</label>
+			<label class="row">
+				<p>Adresse <span class="red">*</span></p>
+				<input class="inp b-radius-15" type="text" required="required" placeholder="Saisissez votre adresse" name="Adresse">
+			</label>
+			<label class="row">
+				<p>Code Postal <span class="red">*</span></p>
+				<input class="inp b-radius-15" type="text" minlength="5" maxlength="5" required="required" placeholder="Saisissez votre code postal" name="Code Postal">
+			</label>
+			<label class="row">
+				<p>Ville <span class="red">*</span></p>
+				<input class="inp b-radius-15" type="text" required="required" placeholder="Saisissez votre ville" name="Ville">
+			</label>
+			<label class="row">
+				<p>Message <span class="red">*</span></p>
+				<input id="carre" class="inp b-radius-15" type="text" required="required" placeholder="Saisissez votre message" name="Message">
+			</label>
+			<p><span class="red">*</span>&#32;Champs Obligatoires</p>
+			<div id="envoiForm" class="row center">
+				<input class="b-radius-15 pointer" type="button" value="Envoyer" name="" >
+				<input class="b-radius-15 pointer" type="reset" name="">
+			</div>
+		</form>
+	</section>
+	<script src="script/jquery.js"></script>
+</body>
+</html>

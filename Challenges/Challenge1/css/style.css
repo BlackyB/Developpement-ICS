@@ -1,0 +1,70 @@
+#calendrier{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#jour{
+	margin: 0;
+}
+
+.center{
+	box-sizing: border-box;
+	padding: 0;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.bordure{
+	border: 2px solid black;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.nav{
+	flex-wrap: wrap;
+}
+.largeur{
+	flex-wrap: wrap;
+	width: 100%;
+	min-width: 350px;
+	max-width: 700px;
+	margin: auto;
+}
+.cell{
+	width: 14.285%;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #9ca3db;
+}
+.inactive{
+	color: #d1ccdc;
+}
+.active {
+	color: #9893da;
+	font-weight: bold;
+	background-color: #454b66;
+	border-radius: 25px;
+}
+.col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#header{
+	text-align: center;
+}
+#entete{
+	background-color: #677db7;
+}
+#tableau{
+	background-color: #9ca3db;
+	color: #173753;
+}

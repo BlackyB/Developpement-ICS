@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	background: url(../img/paris.jpg) no-repeat center top fixed;
+}
+#searchBar{
+	color: #FFF;
+	border: 0;
+	width: 80%;
+	line-height: 2em;
+	font-size: 1em;
+	padding: 0 10px;
+	background-color: transparent;
+}
+#searchBtn{
+	color: #FFF;
+	font-size: 2rem;
+	background-color: transparent;
+	border: 0;
+	border-left: 2px solid grey;
+	width: 20%;
+}
+#searchBtn:hover {
+	cursor: pointer;
+	background-color: rgba(94, 56, 86, 0.5);
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 30%;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.margin {
+	margin-top: 25%;
+}
+.border {
+	border-radius: 10px;
+	border: 2px solid grey;
+}
+.bgV{
+	background-color: rgba(55, 34, 51, 0.5);
+}
+.affichage {
+	border-top: 1px solid grey;
+	background-color: rgba(55, 34, 51, 0.5);
+	color: #FFF;
+}
+.padding {
+	padding: 0 10px;
+}
+.hover {
+	background-color: rgba(94, 56, 86, 0.5);
+	cursor: pointer;
+}

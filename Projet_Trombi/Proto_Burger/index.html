@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trombinoscope</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div id="wrapper">
+			<div class="menu" id="menu"()>
+				
+				<label for="toogle">
+					<div class="button_menu"onclick="closemenuFunction()">
+						<p>Trombinoscope</p>
+					</div>	
+				</label>
+				<div class="button_menu">
+					<a href="autoevalXX.html"><p>Mon Auto Evaluation</p></a>
+				</div>
+				<div class="button_menu">
+					<p>Météo intérieure</p>
+				</div>
+			</div>	
+			<section class="section">
+				<div id="monHeader">
+					<div class="container">
+						<div class="col-1">
+							<!--- menu hamburger----------------->
+							<div class="blabla" id="blabla" onclick="menuFunction(this)">
+								<div class="bar1" id="bar1"></div>
+								<div class="bar2" id="bar2"></div>
+								<div class="bar3" id="bar3"></div>
+							</div>
+						</div>
+						<div class="col-2">
+							<h1>Developpeur Web <br /> Web Mobile</h1>
+						</div>
+						<div class="col-3">
+							<img id="embedded_logo" src="img/logo_ics.png" alt="logo ICS">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div id="slider_central" >
+
+					<img class="mySlides" src="img/X_Adel_C.jpg" alt="Portrait de Adel">
+					<img class="mySlides" src="img/X_Antoine_C.jpg" alt="Portrait de Antoine">
+					<img class="mySlides" src="img/X_Dimitri_C.jpg" alt="Portrait de Dimitri">
+					<img class="mySlides" src="img/X_Jonathan_C.jpg" alt="Portrait de Jonathan">
+					<img class="mySlides" src="img/X_Marie_C.jpg" alt="Portrait de Marie">
+					<img class="mySlides" src="img/X_Radhwa_C.jpg" alt="Portrait de Radhwa">
+					<img class="mySlides" src="img/X_Tim_C.jpg" alt="Portrait de Tim">
+					<img class="mySlides" src="img/X_Anaelle_C.jpg" alt="Portrait de Anaelle">
+					<img class="mySlides" src="img/X_Damien_C.jpg" alt="Portrait de Damien">
+					<img class="mySlides" src="img/X_Isabelle_C.jpg" alt="Portrait de Isabelle">
+					<img class="mySlides" src="img/X_Magali_C.jpg" alt="Portrait de Magali">
+					<img class="mySlides" src="img/X_Maxence_C.jpg" alt="Portrait de Maxence">
+					<img class="mySlides" src="img/X_Sebastien_C.jpg" alt="Portrait de Sebastien">
+					<img class="mySlides" src="img/X_Younes_C.jpg" alt="Portrait de Younes">
+					<img class="mySlides" src="img/X_Anthony_C.jpg" alt="Portrait de Anthony">
+					<img class="mySlides" src="img/X_Diliana_C.jpg" alt="Portrait de Diliana">
+					<img class="mySlides" src="img/X_James_C.jpg" alt="Portrait de James">
+					<img class="mySlides" src="img/X_Mariana_C.jpg" alt="Portrait de Mariana">
+					<img class="mySlides" src="img/X_PAlexis_C.jpg" alt="Portrait de P-Alexis">
+					<img class="mySlides" src="img/X_Sophie_C.jpg" alt="Portrait de Sophie">
+				</div>
+			</section>
+
+			<section>
+				<input type="checkbox" name="toogle" id="toogle"/>
+				<div id="volet" onclick="closemainFunction()">
+					<label for="toogle">
+						<div id="selecteur">
+							<div id="button">
+								<img id="arrow" src="img/chevron.png" alt="Fleche">
+							</div>
+						</div>
+					</label>
+					<br>
+					<br>
+					<div id="rounded_container">
+						<h3>Trombinoscope</h3>
+					</div>
+					<div class="row_mosa">
+						<!--Colonne de Gauche -->
+						<div class="col-m-1">
+							<img class="portrait" id="portrait_adel" src="img/X_Adel_C.jpg" alt="Portrait de Adel" onclick="imclickFunction(this)">
+							<p class="name">Abdellatif</p>
+							<img class="portrait" src="img/X_Antoine_C.jpg" alt="Portrait de Antoine"onclick="imclickFunction(this)">
+							<p class="name">Antoine</p>
+							<img class="portrait" src="img/X_Dimitri_C.jpg" alt="Portrait de Dimitri"onclick="imclickFunction(this)">
+							<p class="name">Dimitri</p>
+							<img class="portrait" src="img/X_Jonathan_C.jpg" alt="Portrait de Jonathan"onclick="imclickFunction(this)">
+							<p class="name">Jonathan</p>
+							<img class="portrait" src="img/X_Marie_C.jpg" alt="Portrait de Marie"onclick="imclickFunction(this)">
+							<p class="name">Marie Amandine</p>
+							<img class="portrait" src="img/X_Radhwa_C.jpg" alt="Portrait de Radhwa"onclick="imclickFunction(this)">
+							<p class="name">Radhwa</p>
+							<img class="portrait" src="img/X_Tim_C.jpg" alt="Portrait de Tim"onclick="imclickFunction(this)">
+							<p class="name">Tim</p>
+						</div>
+						<!--Colonne du Milieu-->
+						<div class="col-m-2">
+							<img class="portrait" src="img/X_Anaelle_C.jpg" alt="Portrait de Anaelle"onclick="imclickFunction(this)">
+							<p class="name">Anaelle</p>
+							<img class="portrait" src="img/X_Damien_C.jpg" alt="Portrait de Damien"onclick="imclickFunction(this)">
+							<p class="name">Damien</p>
+							<img class="portrait" src="img/X_Isabelle_C.jpg" alt="Portrait de Isabelle"onclick="imclickFunction(this)">
+							<p class="name">Isabelle</p>
+							<img class="portrait" src="img/X_Magali_C.jpg" alt="Portrait de Magali"onclick="imclickFunction(this)">
+							<p class="name">Magali</p>
+							<img class="portrait" src="img/X_Maxence_C.jpg" alt="Portrait de Maxence"onclick="imclickFunction(this)">
+							<p class="name">Maxence</p>
+							<img class="portrait" src="img/X_Sebastien_C.jpg" alt="Portrait de Sebastien"onclick="imclickFunction(this)">
+							<p class="name">Sebastien</p>
+							<img class="portrait" src="img/X_Younes_C.jpg" alt="Portrait de Younes"onclick="imclickFunction(this)">
+							<p class="name">Younes</p>
+						</div>
+						<!--Colonne de Droite -->
+						<div class="col-m-3">
+							<img class="portrait" src="img/X_Anthony_C.jpg" alt="Portrait de Anthony"onclick="imclickFunction(this)">
+							<p class="name">Anthony</p>
+							<img class="portrait" src="img/X_Diliana_C.jpg" alt="Portrait de Diliana"onclick="imclickFunction(this)">
+							<p class="name">Dilyana</p>
+							<img class="portrait" src="img/X_James_C.jpg" alt="Portrait de James"onclick="imclickFunction(this)">
+							<p class="name">James</p>
+							<img class="portrait" src="img/X_Mariana_C.jpg" alt="Portrait de Mariana"onclick="imclickFunction(this)">
+							<p class="name">Mariana</p>
+							<img class="portrait" src="img/X_PAlexis_C.jpg" alt="Portrait de P-Alexis"onclick="imclickFunction(this)">
+							<p class="name">Alexis-Mathieu</p>
+							<img class="portrait" src="img/X_Sophie_C.jpg" alt="Portrait de Sophie"onclick="imclickFunction(this)">
+							<p class="name">Sophie</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script>
+
+
+			//**********ANIM-DES-PHOTOS************/////
+
+
+			function imclickFunction(x){
+				x.classList.toggle("portraitclick");
+			}
+			
+
+			
+			
+
+
+
+			
+
+
+
+
+
+			//***********ANIM_DU_MENU_**************************//
+			function toggleElement(){
+				document.getElementById("bar1").classList.toggle("bar1c");
+				document.getElementById("bar2").classList.toggle("bar2c");
+				document.getElementById("bar3").classList.toggle("bar3c");
+				document.getElementById("menu").classList.toggle("menuChangeOff");
+			}
+			function menuFunction() {
+				toggleElement();
+				button_menu.classList.toggle("button_menu_change");
+			}
+
+			//********ANIM_DU_MENU_VIA_CLICK_TROMBI***********//
+			function closemenuFunction(){
+				toggleElement();
+			}	
+
+
+
+
+
+			//******PARTIEJOHNCAROUSSEL************//
+
+
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1}
+					x[slideIndex-1].style.display = "block";
+				setTimeout(carousel, 2000);
+			}
+		</script>
+	</body>
+	</html>

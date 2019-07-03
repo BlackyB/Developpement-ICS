@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recréer une page e-commerce</title>
+	<link rel="stylesheet" type="text/css" href="styleRealisations.css">
+</head>
+<body>
+	<div id="wrapper">
+		<section id="myHeader">
+			<div id="titre">
+				<h1>Factory - Design</h1>
+			</div>
+			<nav>
+				<a href="ecommerce.html"><h2>Accueil</h2></a>
+				<a href="promotions.html"><h2>Boutique</h2></a>
+				<a href="atelier.html"><h2>Atelier</h2></a>
+				<a href="realisations.html"><h2>Realisations</h2></a>
+				<a href="artisans.html"><h2>Artisans</h2></a>
+				<a><h2 id="contact">Contactez nous</h2></a>
+			</nav>
+			<section id="contactFormModal">
+
+				<span class="closeForm">&times;</span>
+				<div class="container">
+					<form action="POST">
+						<div id="champText">
+							<label for="fname">Prénom</label>
+							<input type="text" id="fname" name="firstname" placeholder="Votre prénom.." required>
+
+							<label for="lname">Nom</label>
+							<input type="text" id="lname" name="lastname" placeholder="Votre nom.." required>
+
+							<label for="country">Pays</label>
+							<select id="country" name="country" required>
+								<option value="default">Choisir votre Pays</option>
+								<option value="france">France</option>
+								<option value="italia">Italie</option>
+								<option value="spain">Espagne</option>
+							</select>
+						</div>
+						<label for="subject">Sujet</label>
+						<textarea id="subject" name="subject" placeholder="Ecrivez votre message.." style="height:200px" required></textarea>
+						<input id="envoi" type="submit" value="Submit">
+					</form>
+				</div> 
+			</section>
+		</section>
+		<section id="main">
+			<div id="blackT">
+				<img src="img/mosa1.jpg">
+			</div>
+			<div id="whiteT">
+				<img src="img/mosa2.jpg">
+			</div>
+			<div id="greyT">
+				<img src="img/mosa3.jpg">
+			</div>
+			<div id="darkGreyT">
+				<img src="img/mosa4.jpg">
+			</div>
+			<div id="lightGreyT">
+				<img src="img/mosa5.jpg">
+			</div>
+			<div id="smallBlackT">
+				<img src="img/mosa6.jpg">
+			</div>
+			<div id="largeBlackB">
+				<img src="img/mosa7.jpg">
+			</div>
+			<div id="halfBottom">
+				<img src="img/mosa8.jpg">
+			</div>
+			<div id="secondHalfBottom">
+				<img src="img/mosa9.jpg">
+			</div>
+			<div id="lastRow">
+				<img src="img/mosa10.jpg">
+			</div>
+
+			
+			
+		</section>
+
+		<section id="reseau">
+			<div id="logo">
+				<div>
+					<a href="https://www.facebook.com/" target="_blank">
+						<img class="logo" src="img/facebook.svg" alt="Logo Facebook">
+					</a>
+				</div>
+				<div>
+					<a href="https://twitter.com/?lang=fr" target="_blank">
+						<img class="logo" src="img/twitter.svg" alt="Logo Twitter">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.google.fr/maps" target="_blank">
+						<img class="logo" src="img/map-marker.svg" alt="Logo Magasin">
+<!-- 						<div id="coord">
+							<a href="mailto:FactoryDesign@gmail.com?subject=Prise de contact">FactoryDesign<span id="arobase">@</span>gmail.com</a>
+							<p>04.93.00.00.00</p>
+						</div> -->
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script>
+
+	//Modal Form
+	var modalForm = document.getElementById('contactFormModal');
+	var contactButton = document.getElementById('contact');
+	contactButton.onclick = function(){
+		modalForm.style.display = "block";
+	}
+	var span = document.getElementsByClassName("closeForm")[0];
+	span.onclick = function() {
+		modalForm.style.display = "none";
+	}
+
+</script>
+
+</body>
+</html>
